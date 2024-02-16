@@ -1,0 +1,16 @@
+<video id="meuVideos" width="800" height="300" controls autoplay>
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4" >
+</video>
+
+<div wm-progresso="meuVideos" class="progresso">
+    <div>
+        <p id="xx">alo</p>
+    </div>
+</div>
+
+<script>
+    const xx = document.getElementById('xx');
+    
+    xx.innerHTML = `${document.querySelectorAll('video')[0].duration.toString()}`
+
+</script>
